@@ -1,0 +1,557 @@
+/* General Styles */
+html,body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: rgba(40, 8, 156, 0.897); */
+    /* color: #131313; */
+}
+.house-header{
+    background-image: url(interior.avif);
+}
+.combined-one{
+    background-image:url(interior.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+/* home  */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('interior.avif') center center/cover no-repeat; /* Add your background image */
+    padding: 20px;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, 0.6); Dark overlay */
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+}
+
+.content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.search-box input {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.search-box button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #d4af37;
+    border: none;
+    cursor: pointer;
+    color: #000;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.search-box button:hover {
+    background-color: #b48e2d;
+}
+
+header nav {
+    /* background-color: #0f0d7c; */
+    color: #e0d212;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #e0d212;;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #2f0a94;
+}
+
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(239, 247, 242);
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero .cta-btn {
+    background-color: #ff9800;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.hero .cta-btn:hover {
+    background-color: #e57c00;
+}
+
+.property {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.property img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.property h2 {
+    margin: 10px 0;
+    color: #edf0f3;
+}
+
+.property .view-details {
+    text-decoration: none;
+    color: #535151;
+    background-color: #e0e6ee;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.property .view-details:hover {
+    background-color:rgb(247, 247, 252);
+}
+.featured-properties {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.section-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Properties Container */
+.properties-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Property Card */
+.property-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    position: relative;
+    text-align: left;
+}
+
+.property-image {
+    position: relative;
+}
+
+.property-image img {
+    width: 100%;
+    display: block;
+}
+
+.label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #222;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+
+.label.featured {
+    background: #d4af37;
+    left: 80px;
+}
+
+.label.for-sale {
+    background: #ff4d4f;
+}
+
+.label.for-rent {
+    background: #ff4d4f;
+}
+
+/* Property Info */
+.property-info {
+    padding: 15px;
+    position: relative;
+}
+
+.property-type {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.property-price {
+    font-size: 1.3rem;
+    color: #d4af37;
+    font-weight: bold;
+}
+
+.property-price span {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: normal;
+}
+
+/* Actions */
+.property-actions {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.property-actions button {
+    background-color: #f4f4f4;
+    border: none;
+    font-size: 1.1rem;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.property-actions button:hover {
+    background-color: #ddd;
+}
+.home-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    /* background-image: url('background-image.jpg'); */
+    background-size: cover;
+    background-position: center;
+    color: rgb(11, 11, 11);
+}
+
+.home-header {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.home-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.home-header p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+.feature-section {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    /* margin-bottom: 20px; */
+}
+
+.feature-card {
+    background-color: #565454;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    color: #dd9f1a;
+    flex: 1 1 30%;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.feature-card p{
+    color: white;
+}
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card img {
+    margin-bottom: 10px;
+}
+.feature-card h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #333;
+    color: #f8f7f7;
+    text-align: center;
+    padding: 10px 0;
+}
+/* houses page  */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f8;
+  }
+  
+  .listing-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+  
+  /* Individual Listing Card */
+  .listing-card {
+    background-color: #fff;
+    border-radius: 8px;
+    width: 340px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .listing-card:hover {
+    transform: translateY(-8px);
+  }
+  
+  /* Image Section */
+  .listing-image {
+    position: relative;
+  }
+  
+  .listing-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 8px;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+  }
+  
+  .sale-status {
+    background-color: #ff4d4f;
+  }
+  
+  .rent-status {
+    background-color: #ff4d4f;
+  }
+  
+  .featured-status {
+    right: 10px;
+    left: auto;
+    background-color: #ffa940;
+  }
+  
+  /* Listing Details */
+  .listing-details {
+    padding: 15px;
+  }
+  
+  .listing-price {
+    font-size: 20px;
+    color: #ffa940;
+    margin: 0;
+  }
+  
+  .price-type {
+    color: #888;
+    font-size: 14px;
+  }
+  
+  .listing-title {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #333;
+  }
+  
+  .listing-location {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .listing-attributes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .listing-attributes span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .listing-attributes i {
+    color: #ffa940;
+  }
+  
+ 
+/* About Section */
+.about {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1a73e8;
+}
+
+.about h2 {
+    margin-top: 20px;
+    color: #1a73e8;
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #6d6c6c;
+}
+
+/* Contact Section */
+.contact {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact h1 {
+    text-align: center;
+    color: #1a73e8;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #615d5d;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact label {
+    font-size: 14px;
+    color: #5f5e5e;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #5e5b5b;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background: #1a73e8;
+    color: rgb(243, 241, 241);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact button:hover {
+    background: #05276b;
+}
